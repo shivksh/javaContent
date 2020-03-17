@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="calc.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+</head>
+<body>
+    <div class="container" id='second' >
+     
+
+     <div class='div2'    id='first' >
+        <div class="inputbox"  >
+            <input type="input" class='input1' v-model='current'>
+        </div>
+
+
+     <ul class="table">
+           <li class='items' ><button type="button" class="btn" @click='clear'   >AC</button></li>    
+           <li class='items'><button type="button" class="btn" @click='percent'>%</button></li>    
+           <li class='items'><button type="button" class="btn"   @click='sign'  >+/-</button></li>    
+           <li class='items'><button type="button" class="btn" id="yellow"b @click='multi'>*</button></li>    
+        </ul>
+
+<hr>
+
+        <ul class="table">
+            <li class='items'><button type="button" class="btn" @click='append("7")'>7</button></li>    
+            <li class='items'><button type="button" class="btn" @click='append("8")'>8</button></li>    
+            <li class='items'><button type="button" class="btn" @click='append("9")'>9</button></li>    
+            <li class='items'><button type="button" class="btn" id="yellow" @click='divide'>&divide;</button></li>    
+         </ul>
+ 
+<hr>
+
+         <ul class="table">
+            <li class='items'><button type="button" class="btn" @click='append("4")'>4</button></li>    
+            <li class='items'><button type="button" class="btn" @click='append("5")'>5</button></li>    
+            <li class='items'><button type="button" class="btn" @click='append("6")'>6</button></li>    
+            <li class='items'><button type="button" class="btn" id="yellow" @click='add' >+</button></li>    
+         </ul>
+ 
+<hr>
+
+
+         <ul class="table">
+            <li class='items'><button type="button" class="btn" @click='append("1")'>1</button></li>    
+            <li class='items'><button type="button" class="btn" @click='append("2")'>2</button></li>    
+            <li class='items'><button type="button" class="btn" @click='append("3")'>3</button></li>    
+            <li class='items'><button type="button" class="btn" id="yellow" @click="subst">-</button></li>    
+         </ul>
+ 
+
+         <hr>
+
+
+         <ul class="table">
+            <li class='items'><button type="button" class="btn" id='zero' @click='append("0")'>0</button></li>    
+            <li class='items'><button type="button" class="btn" @click='append("00")' >00</button></li>    
+            <li class='items'><button type="button" class="btn" @click='point(".")'>.</button></li>    
+            <li class='items'><button type="button" class="btn" id="yellow" @click='equal'>=</button></li>    
+         </ul>
+ 
+
+
+       
+
+    </div>
+
+    </div>
+    <script src="calc.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VueData</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+<style>
+
+.active{
+    color:'red';
+}
+
+
+
+</style>
+
+
+
+
+</head>
+<body>
+    
+<div id="app">
+    <h1 id="name">
+        {{message}}
+    </h1>
+    <a :href="url">Vinove</a>
+    
+
+
+</div>
+<div id="div2" >
+    <h3 :style='styleData' class='static' :class="{active:IsActive}">{{number}}</h3>
+    <button v-on:click='number--' >{{Submit1}}</button>
+    <button v-on:click='number++'>{{Submit2}}</button>
+</div>
+    <script src='vuedatag.js'></script>
+</body>
+</html>

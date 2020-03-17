@@ -1,0 +1,67 @@
+.container{
+    width:23%;
+    
+    margin:0 auto;
+    margin-top: 10%;
+
+}
+.container .input1{
+height: 7vh;
+width: 100%;
+}
+
+
+.items{
+    display: inline-block;
+}
+.items{
+    width:24%;
+    height: 7vh;
+    margin-left: 0.3%;
+}
+
+
+.div2{
+    width: 100%;
+    
+}
+
+.btn{
+font-size: x-large;
+width: 100%;
+height: 100%;
+border-radius: 10%;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-weight: 1000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+#yellow{
+    background-color: orange;
+    color: white;
+}
+
+
+.div2{
+  
+}
+
+
+.input1{
+    border-top: solid black ;
+    border-left:solid black ;
+    border-right: solid black;
+    width: 100%;
+    font-size: x-large;
+    background-color: black;
+    color: white;
+    text-align: right;
+
+}
+
+

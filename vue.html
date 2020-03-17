@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            VueFile
+        </title>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <h1 id="heading">{{Heading_1}}</h1>
+            <a :href='url'> {{Heading_2+10}}</a><br>
+            <a :href='dta'> {{NewData}}</a>
+        
+        <form>
+            <input type="input" v-model='message'>
+        </form>
+        {{message}}
+
+    </div>
+
+
+
+    <div id="newDiv">
+
+
+        <h1 v-on:click='number++' :style='{border:NewData,color:Another}'>{{number}}</h1>
+        <button v-on:click='number--'>{{value}}</button>
+
+
+
+
+    </div>
+
+        <script src='vueFile.js'></script>
+ 
+    </body>
+</html> 
